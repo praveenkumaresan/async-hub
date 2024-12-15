@@ -1,7 +1,9 @@
+package com.example
+
 import kotlinx.coroutines.*
 
 
-/*
+/***
 Structured concurrency in Kotlin coroutines ensures that coroutines are launched in a structured way, making it easier to manage their lifecycle and handle errors. It involves using coroutine scopes to define the lifecycle of coroutines and ensuring that they are properly managed.  Here is an example demonstrating structured concurrency in Kotlin coroutines:
 In this example:
 runBlocking creates a coroutine scope that blocks the main thread.

@@ -2,7 +2,7 @@ package com.example
 
 import kotlinx.coroutines.*
 
-/*
+/***
 Here is an example demonstrating the use of Kotlin coroutines to spin multiple threads and print the thread names, including the main thread and other threads:
 In this example:
 The main function runs in the main thread.

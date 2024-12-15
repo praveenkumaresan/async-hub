@@ -1,6 +1,8 @@
+package com.example
+
 import kotlinx.coroutines.*
 
-/*
+/***
 Here is an example of a Kotlin class that demonstrates the use of timeouts with coroutines:
 
 n this example:

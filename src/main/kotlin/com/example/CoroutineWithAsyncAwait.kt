@@ -2,7 +2,7 @@ package com.example
 
 import kotlinx.coroutines.*
 
-/*
+/***
 Here is an example demonstrating the use of Kotlin coroutines with async and await for concurrent programming:
 
 In this example, two coroutines are launched using async, which allows them to run concurrently. The await function is used to get the result of each coroutine once they complete. The program will print "Hello World" after both coroutines have finished their delays.

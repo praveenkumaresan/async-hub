@@ -3,7 +3,7 @@ package com.example
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
-/*
+/***
 Flow in Kotlin coroutines is a type that can emit multiple values sequentially, as opposed to suspend functions that return only a single value. It is a cold stream, meaning that the code inside a flow builder does not run until the flow is collected.  Here is an example demonstrating the use of Flow in Kotlin coroutines:
 
 In this example:

@@ -1,15 +1,19 @@
+package com.example
+
 import kotlinx.coroutines.*
 
 
-/*
+/***
 In Kotlin coroutines, launch and async are two different coroutine builders that serve distinct purposes:
 launch:
 Purpose: Used to launch a new coroutine without blocking the current thread. It is primarily used for fire-and-forget operations.
 Return Type: Returns a Job object, which represents the coroutine and can be used to manage its lifecycle (e.g., cancel it).
 Usage: Suitable for operations where you do not need a result to be returned.
+
 val job = launch {
     // Coroutine code
-}
+}`
+
 async:
 Purpose: Used to launch a new coroutine and return a result. It is used for concurrent operations where you need to get a result back.
 Return Type: Returns a Deferred object, which is a subclass of Job and represents a future result. You can use the await function to get the result.

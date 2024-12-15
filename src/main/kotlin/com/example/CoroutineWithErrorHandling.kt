@@ -2,8 +2,8 @@ package com.example
 
 import kotlinx.coroutines.*
 
-/*
-here is an example of error handling in Kotlin coroutines using try-catch blocks:
+/***
+Here is an example of error handling in Kotlin coroutines using try-catch blocks:
 
 In this example:
 The launch coroutine builder is used to start a coroutine that throws an IndexOutOfBoundsException. The exception is caught within the coroutine using a try-catch block.
