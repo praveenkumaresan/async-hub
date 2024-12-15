@@ -1,0 +1,33 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Kotlin
+/build/
+out/
+
+# Gradle
+.gradle/
+build/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Byte-compiled / optimized / DLL files
+*.class
+*.war
+*.ear
+*.jar
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+
+# Test results
+/test-results/
