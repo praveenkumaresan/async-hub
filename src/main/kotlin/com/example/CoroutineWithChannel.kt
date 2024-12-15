@@ -4,7 +4,7 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.channels.Channel
 
 
-/*
+/***
 here is an example of using channels in Kotlin coroutines to send and receive messages between coroutines:
 
 In this example:

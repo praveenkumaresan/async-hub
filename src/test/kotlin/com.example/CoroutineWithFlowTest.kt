@@ -1,9 +1,7 @@
-// src/test/kotlin/com/example/CoroutineWithFlowTest.kt
 package com.example
 
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test
-
 import kotlin.test.assertEquals
 
 class CoroutineWithFlowTest {
