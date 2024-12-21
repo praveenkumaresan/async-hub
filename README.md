@@ -85,6 +85,11 @@ Synchronous programming is the default for most developers. It means that code i
 9. Use Coroutine Dispatchers
 10. Use Coroutine Cancellation
 
+## Fundamentals
+
+Refer to the [Comparison of Concepts](src/main/kotlin/com/example/fundamentals/ComparisonOfConcepts.md) for a comparison of synchronous and asynchronous programming in Kotlin.
+
+## Advanced
 
 Here are the links to each of the Kotlin examples:
 
@@ -99,3 +104,5 @@ Here are the links to each of the Kotlin examples:
 - [CoroutineWithSuspendFunction.kt](src/main/kotlin/com/example/CoroutineWithSuspendFunction.kt)
 - [CoroutineWithTimeout.kt](src/main/kotlin/com/example/CoroutineWithTimeout.kt)
 - [CoroutineWithContext.kt](src/main/kotlin/com/example/CoroutineWithContext.kt)
+- [CoroutineWithMultipleUsers.kt](src/main/kotlin/com/example/CoroutineWithMultipleUsers.kt)
+- [CoroutineWithMultipleUsersDifferentThread.kt](src/main/kotlin/com/example/CoroutineWithMultipleUsersDifferentThread.kt)
