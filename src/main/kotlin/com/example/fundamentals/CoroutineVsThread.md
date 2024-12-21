@@ -1,6 +1,9 @@
 # What is a Coroutine?
 
-Coroutines are lightweight threads that enable you to write asynchronous code in a sequential and readable manner. They are a **concurrency design pattern** that allows non-blocking execution, making it easier to perform long-running tasks without freezing the main thread. Unlike traditional threads, coroutines are more efficient, easier to work with, and are fully integrated into Kotlin.
+Coroutines are lightweight threads that enable you to write asynchronous code in a sequential and readable manner. They
+are a **concurrency design pattern** that allows non-blocking execution, making it easier to perform long-running tasks
+without freezing the main thread. Unlike traditional threads, coroutines are more efficient, easier to work with, and
+are fully integrated into Kotlin.
 
 ---
 
@@ -10,7 +13,8 @@ Coroutines are lightweight threads that enable you to write asynchronous code in
 2. **Sequential**: They allow writing asynchronous code in a readable, sequential manner.
 3. **Non-blocking**: Coroutines perform tasks without blocking the main thread, improving application responsiveness.
 4. **Scalable**: Efficiently handle large numbers of concurrent tasks.
-5. **Structured Concurrency**: Coroutines follow structured concurrency principles, simplifying lifecycle and task management.
+5. **Structured Concurrency**: Coroutines follow structured concurrency principles, simplifying lifecycle and task
+   management.
 6. **Exception Handling**: Built-in support for handling exceptions in asynchronous code.
 7. **Cancellation Support**: Coroutines can be canceled easily when tasks are no longer needed.
 8. **Integration**: Fully integrated with Kotlin and its standard library, making them easy to adopt in projects.
@@ -18,26 +22,28 @@ Coroutines are lightweight threads that enable you to write asynchronous code in
 10. **Performance**: Coroutines have low overhead, making them suitable for high-performance applications.
 11. **Testing**: Easy to test and debug.
 12. **Backpressure Handling**: Useful for controlling the flow of data in asynchronous streams.
-13. **Tools**: Provide coroutine builders (`launch`, `async`) and other powerful constructs like `Flow`, `Channels`, and `Actors`.
+13. **Tools**: Provide coroutine builders (`launch`, `async`) and other powerful constructs like `Flow`, `Channels`, and
+    `Actors`.
 
 ---
 
 ## How Are Coroutines Different from Threads?
 
-| **Feature**                | **Coroutines**                                         | **Threads**                                    |
-|-----------------------------|-------------------------------------------------------|------------------------------------------------|
-| **Lightweight**             | Lightweight; managed by Kotlin runtime.               | Heavyweight; managed by the operating system.  |
-| **Resource Usage**          | Consumes fewer resources than threads.                | Consumes more memory and system resources.     |
-| **Execution**               | Non-blocking; suspends and resumes seamlessly.        | Blocking; tasks block the thread while running. |
-| **Concurrency Management**  | Follows structured concurrency for better management. | Requires explicit management by developers.    |
-| **Exception Handling**      | Built-in exception handling.                          | Requires manual exception handling.            |
-| **Integration**             | Fully integrated with Kotlin and the standard library.| Not integrated; more boilerplate is needed.    |
+| **Feature**                | **Coroutines**                                         | **Threads**                                     |
+|----------------------------|--------------------------------------------------------|-------------------------------------------------|
+| **Lightweight**            | Lightweight; managed by Kotlin runtime.                | Heavyweight; managed by the operating system.   |
+| **Resource Usage**         | Consumes fewer resources than threads.                 | Consumes more memory and system resources.      |
+| **Execution**              | Non-blocking; suspends and resumes seamlessly.         | Blocking; tasks block the thread while running. |
+| **Concurrency Management** | Follows structured concurrency for better management.  | Requires explicit management by developers.     |
+| **Exception Handling**     | Built-in exception handling.                           | Requires manual exception handling.             |
+| **Integration**            | Fully integrated with Kotlin and the standard library. | Not integrated; more boilerplate is needed.     |
 
 ---
 
 ## How to Use Coroutines in Kotlin
 
-To use coroutines in Kotlin, add the `kotlinx-coroutines-core` library to your project. Add the following dependency to your `build.gradle.kts` file:
+To use coroutines in Kotlin, add the `kotlinx-coroutines-core` library to your project. Add the following dependency to
+your `build.gradle.kts` file:
 
 ```kotlin
 dependencies {
@@ -78,20 +84,19 @@ fun main() {
 9. Error Handling: Handle exceptions effectively in asynchronous code.
 10. Testing: Simplify testing of asynchronous code.
 
-
 ---
 
 ## Best Practices for Using Coroutines
 
 1. **Use Structured Concurrency**: Follow structured concurrency principles for better task management.
-2. **Use Coroutine Builders**: Use builders such as launch and async to create coroutines. 
-3. **Use Coroutine Context**: Define execution contexts with Dispatchers.IO, Dispatchers.Default, etc. 
-4. **Use Coroutine Scopes**: Manage the lifecycle of coroutines using CoroutineScope. 
-5. **Use Cancellation**: Cancel long-running tasks when they are no longer needed (e.g., job.cancel()). 
-6. **Use Flow**: Handle asynchronous streams of data in a structured way. 
-7. **Use Channels**: Communicate safely between coroutines with Channel. 
-8. **Use Actors**: Manage mutable state safely using actor. 
-9. **Follow Structured Concurrency**: Ensure tasks are managed hierarchically with coroutineScope or supervisorScope. 
+2. **Use Coroutine Builders**: Use builders such as launch and async to create coroutines.
+3. **Use Coroutine Context**: Define execution contexts with Dispatchers.IO, Dispatchers.Default, etc.
+4. **Use Coroutine Scopes**: Manage the lifecycle of coroutines using CoroutineScope.
+5. **Use Cancellation**: Cancel long-running tasks when they are no longer needed (e.g., job.cancel()).
+6. **Use Flow**: Handle asynchronous streams of data in a structured way.
+7. **Use Channels**: Communicate safely between coroutines with Channel.
+8. **Use Actors**: Manage mutable state safely using actor.
+9. **Follow Structured Concurrency**: Ensure tasks are managed hierarchically with coroutineScope or supervisorScope.
 10. **Avoid GlobalScope**: Use structured concurrency for better control over coroutines.
 
 ---

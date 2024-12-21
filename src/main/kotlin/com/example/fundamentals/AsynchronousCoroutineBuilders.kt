@@ -19,5 +19,6 @@ fun main() = runBlocking {
             println("Task 1 ends: [${Thread.currentThread().name}]")
         }
     }
+
     println("Main ends: [${Thread.currentThread().name}]")
 }

@@ -1,5 +1,8 @@
 package com.example.thread
 
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 import kotlin.concurrent.thread
 
 /**
@@ -13,6 +16,14 @@ fun main() {
         thread {
             Thread.sleep(1000)
             println("Thread $it finished in ${Thread.currentThread().name}")
+        }
+    }
+    runBlocking {
+        repeat(100000) {
+            launch {
+                delay(1000L)
+                println("Thread $it finished in ${Thread.currentThread().name}")
+            }
         }
     }
 }
