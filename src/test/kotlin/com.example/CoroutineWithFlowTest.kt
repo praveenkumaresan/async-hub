@@ -1,5 +1,6 @@
 package com.example
 
+import com.example.coroutines.simpleFlow
 import kotlinx.coroutines.runBlocking
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals

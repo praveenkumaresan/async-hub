@@ -1,4 +1,4 @@
-package com.example
+package com.example.coroutines
 
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

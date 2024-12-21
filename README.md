@@ -1,6 +1,5 @@
-# async-hub
+# async-hub learning path on Asynchronous programming
 
-Asynchronous programming
 
 ## What is Asynchronous programming?
 
@@ -40,6 +39,7 @@ Synchronous programming is the default for most developers. It means that code i
 
 ## What are the best practices for Asynchronous programming?
 
+There are many, listing few of them:
 1. Use Promises
 2. Use Async/Await
 3. Use Generators
@@ -51,6 +51,7 @@ Synchronous programming is the default for most developers. It means that code i
 
 ## What are the common use cases for Asynchronous programming?
 
+There are many, listing few of them:
 1. Network Requests
 2. File System Operations
 3. Database Operations
@@ -61,6 +62,7 @@ Synchronous programming is the default for most developers. It means that code i
 
 ## What are the tools available for Asynchronous programming?
 
+There are many, listing few of them:
 1. Node.js
 2. JavaScript
 3. Python
@@ -74,6 +76,7 @@ Synchronous programming is the default for most developers. It means that code i
 
 ## What are the best practices for Asynchronous programming in Kotlin?
 
+There are many, listing few of them:
 1. Use Coroutines
 2. Use Flow
 3. Use Channels
@@ -87,22 +90,23 @@ Synchronous programming is the default for most developers. It means that code i
 
 ## Fundamentals
 
-Refer to the [Comparison of Concepts](src/main/kotlin/com/example/fundamentals/ComparisonOfConcepts.md) for a comparison of synchronous and asynchronous programming in Kotlin.
+- Refer to the [what is a coroutine in Kotlin and how it is different from a thread](src/main/kotlin/com/example/fundamentals/CoroutineVsThread.md) for a comparison of coroutines and threads.
+- Refer to the [Comparison of Concepts](src/main/kotlin/com/example/fundamentals/ComparisonOfConcepts.md) for a comparison of synchronous and asynchronous programming in Kotlin.
 
 ## Advanced
 
 Here are the links to each of the Kotlin examples:
 
-- [CoroutineWithChannel.kt](src/main/kotlin/com/example/CoroutineWithChannel.kt)
-- [CoroutineMultipleThreads.kt](src/main/kotlin/com/example/CoroutineMultipleThreads.kt)
-- [CoroutineWithAsyncAwait.kt](src/main/kotlin/com/example/CoroutineWithAsyncAwait.kt)
-- [CoroutineWithFlow.kt](src/main/kotlin/com/example/CoroutineWithFlow.kt)
-- [CoroutineWithLaunch.kt](src/main/kotlin/com/example/CoroutineWithLaunch.kt)
-- [CoroutineWithRunBlocking.kt](src/main/kotlin/com/example/CoroutineWithRunBlocking.kt)
-- [CoroutineWithScope.kt](src/main/kotlin/com/example/CoroutineWithScope.kt)
-- [CoroutineWithStructuredConcurrency.kt](src/main/kotlin/com/example/CoroutineWithStructuredConcurrency.kt)
-- [CoroutineWithSuspendFunction.kt](src/main/kotlin/com/example/CoroutineWithSuspendFunction.kt)
-- [CoroutineWithTimeout.kt](src/main/kotlin/com/example/CoroutineWithTimeout.kt)
-- [CoroutineWithContext.kt](src/main/kotlin/com/example/CoroutineWithContext.kt)
-- [CoroutineWithMultipleUsers.kt](src/main/kotlin/com/example/CoroutineWithMultipleUsers.kt)
-- [CoroutineWithMultipleUsersDifferentThread.kt](src/main/kotlin/com/example/CoroutineWithMultipleUsersDifferentThread.kt)
+- [CoroutineWithChannel.kt](src/main/kotlin/com/example/coroutines/CoroutineWithChannel.kt)
+- [CoroutineMultipleThreads.kt](src/main/kotlin/com/example/coroutines/CoroutineMultipleThreads.kt)
+- [CoroutineWithAsyncAwait.kt](src/main/kotlin/com/example/coroutines/CoroutineWithAsyncAwait.kt)
+- [CoroutineWithFlow.kt](src/main/kotlin/com/example/coroutines/CoroutineWithFlow.kt)
+- [CoroutineWithLaunch.kt](src/main/kotlin/com/example/coroutines/CoroutineWithLaunch.kt)
+- [CoroutineWithRunBlocking.kt](src/main/kotlin/com/example/coroutines/CoroutineWithRunBlocking.kt)
+- [CoroutineWithScope.kt](src/main/kotlin/com/example/coroutines/CoroutineWithScope.kt)
+- [CoroutineWithStructuredConcurrency.kt](src/main/kotlin/com/example/coroutines/CoroutineWithStructuredConcurrency.kt)
+- [CoroutineWithSuspendFunction.kt](src/main/kotlin/com/example/coroutines/CoroutineWithSuspendFunction.kt)
+- [CoroutineWithTimeout.kt](src/main/kotlin/com/example/coroutines/CoroutineWithTimeout.kt)
+- [CoroutineWithContext.kt](src/main/kotlin/com/example/coroutines/CoroutineWithContext.kt)
+- [CoroutineWithMultipleUsers.kt](src/main/kotlin/com/example/coroutines/CoroutineWithMultipleUsers.kt)
+- [CoroutineWithMultipleUsersDifferentThread.kt](src/main/kotlin/com/example/coroutines/CoroutineWithMultipleUsersDifferentThread.kt)

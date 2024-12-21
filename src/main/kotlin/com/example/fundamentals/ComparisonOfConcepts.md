@@ -14,8 +14,10 @@ Suspending functions are a core concept in Kotlin coroutines. They are regular f
 
 Examples:
 
-The selected code demonstrates the use of a suspending function in Kotlin coroutines. Here's a brief explanation:  
-- suspend fun fetchData(): String: Defines a suspending function that simulates a long-running task by delaying for 1 second and then returning a string "Data fetched!".
+The selected code demonstrates the use of a suspending function in Kotlin coroutines. Here's a brief explanation:
+
+- suspend fun fetchData(): String: Defines a suspending function that simulates a long-running task by delaying for 1
+  second and then returning a string "Data fetched!".
 - runBlocking: Blocks the main thread until all coroutines inside it complete.
 - println("Fetching data..."): Prints a message indicating the start of data fetching.
 - val data = fetchData(): Calls the suspending function fetchData and waits for its result.
@@ -36,14 +38,19 @@ fun main() = runBlocking {
 ```
 
 The selected code demonstrates the use of suspending functions in Kotlin coroutines. Here's a brief explanation:
-- suspend fun fetchUserData(): String: Defines a suspending function that simulates a network call by delaying for 1 second and then returning a string "User data fetched".
-- suspend fun fetchOrders(): String: Defines another suspending function that simulates another network call by delaying for 800 milliseconds and then returning a string "Orders fetched".
-- main: The main function uses runBlocking to start a coroutine that calls the fetchUserData and fetchOrders functions concurrently using async.
+
+- suspend fun fetchUserData(): String: Defines a suspending function that simulates a network call by delaying for 1
+  second and then returning a string "User data fetched".
+- suspend fun fetchOrders(): String: Defines another suspending function that simulates another network call by delaying
+  for 800 milliseconds and then returning a string "Orders fetched".
+- main: The main function uses runBlocking to start a coroutine that calls the fetchUserData and fetchOrders functions
+  concurrently using async.
 - async: Starts
 - println("Processing..."): Prints a message indicating that the data is being processed.
 - println(userData.await()): Waits for the result of the fetchUserData function and prints it.
 - println(orders.await()): Waits for the result of the fetchOrders function and prints it.
-- The code prints "Processing...", waits for 1 second, prints "User data fetched", waits for another 800 milliseconds, and then prints "Orders fetched".
+- The code prints "Processing...", waits for 1 second, prints "User data fetched", waits for another 800 milliseconds,
+  and then prints "Orders fetched".
 - The two suspending functions are called concurrently, and the results are printed sequentially.
 
 ```kotlin
@@ -67,6 +74,7 @@ fun main() = runBlocking {
 }
 
 ```
+
 ## Synchronous Coroutines
 
 Synchronous coroutines are used to bridge blocking code and coroutines. They are used in main functions or test cases.
@@ -74,14 +82,17 @@ Synchronous coroutines are used to bridge blocking code and coroutines. They are
 Examples:
 
 The selected code demonstrates the use of synchronous coroutines in Kotlin. Here's a brief explanation:
+
 - runBlocking: Blocks the main thread until all coroutines inside it complete.
 - println("Main starts"): Prints a message indicating the start of the main function.
 - runBlocking: Starts a new coroutine that calls the fetchData function.
-- fetchData: Simulates a network or long-running task by delaying for 1 second and then returning a string "Data fetched!".
+- fetchData: Simulates a network or long-running task by delaying for 1 second and then returning a string "Data
+  fetched!".
 - println(data): Prints the result of the fetchData function.
 - println("Main ends"): Prints a message indicating the end of the main function.
 - The code prints "Main starts", waits for 1 second, prints "Data fetched!", and then prints "Main ends".
 - The fetchData function is called synchronously within the runBlocking coroutine.
+
 ```kotlin
 suspend fun fetchData(): String {
     delay(1000L) // Simulate a network or long-running task
@@ -104,11 +115,15 @@ fun main() {
 
 ## Asynchronous Coroutine Builders
 
-Asynchronous coroutine builders are used to start coroutines that run concurrently. They are used for fire-and-forget tasks (`launch`), or tasks with results (`async`).
+Asynchronous coroutine builders are used to start coroutines that run concurrently. They are used for fire-and-forget
+tasks (`launch`), or tasks with results (`async`).
 
 Examples:
 
-The selected code uses asynchronous coroutine builders. Specifically, it uses the launch builder to start a coroutine that runs concurrently without blocking the main thread. The runBlocking function is used to bridge the blocking code and coroutines, but the coroutine itself is asynchronous.
+The selected code uses asynchronous coroutine builders. Specifically, it uses the launch builder to start a coroutine
+that runs concurrently without blocking the main thread. The runBlocking function is used to bridge the blocking code
+and coroutines, but the coroutine itself is asynchronous.
+
 ```kotlin
 fun main() {
     runBlocking {
@@ -122,13 +137,15 @@ fun main() {
 }
 ```
 
-This code demonstrates the use of Kotlin coroutines to perform asynchronous operations. Here's a brief explanation:  
+This code demonstrates the use of Kotlin coroutines to perform asynchronous operations. Here's a brief explanation:
+
 - GlobalScope.launch: Starts a new coroutine in the global scope.
 - async: Starts a new coroutine and returns a Deferred result.
 - delay(1000L): Suspends the coroutine for 1 second without blocking the thread.
 - result.await(): Waits for the result of the async coroutine.
 - Thread.sleep(2000L): Blocks the main thread for 2 seconds to allow the coroutine to complete.
 - println: Prints the output to the console.
+
 ```kotlin 
 fun main() {
     GlobalScope.launch {
@@ -142,13 +159,15 @@ fun main() {
 }
 ```
 
-This code demonstrates the use of Kotlin coroutines to perform asynchronous operations. Here's a brief explanation:  
+This code demonstrates the use of Kotlin coroutines to perform asynchronous operations. Here's a brief explanation:
+
 - GlobalScope.launch: Starts a new coroutine in the global scope.
 - launch: Starts a new coroutine within the GlobalScope.launch coroutine.
 - delay(1000L): Suspends the coroutine for 1 second without blocking the thread.
 - job.join(): Waits for the inner coroutine to complete.
 - Thread.sleep(2000L): Blocks the main thread for 2 seconds to allow the coroutine to complete.
 - The code prints "Hello," immediately and "World!" after a 1-second delay.
+
 ```kotlin 
 fun main() {
     GlobalScope.launch {
@@ -163,12 +182,14 @@ fun main() {
 }
 ```
 
-This code demonstrates the use of Kotlin coroutines to perform asynchronous operations. Here's a brief explanation:  
+This code demonstrates the use of Kotlin coroutines to perform asynchronous operations. Here's a brief explanation:
+
 - runBlocking: Blocks the main thread until all coroutines inside it complete.
 - async: Starts a new coroutine and returns a Deferred result.
 - delay(1000L): Suspends the coroutine for 1 second without blocking the thread.
 - result.await(): Waits for the result of the async coroutine.
 - The code prints "Hello, World!" after a 1-second delay.
+
 ```kotlin
 fun main() {
     runBlocking {
@@ -180,13 +201,16 @@ fun main() {
     }
 }
 ```
+
 To try some examples, refer to the following links:
+
 - [SuspendingFunctions.kt](SuspendingFunctions.kt)
 - [SynchronousCoroutines.kt](SynchronousCoroutines.kt)
 - [AsynchronousCoroutineBuilders.kt](AsynchronousCoroutineBuilders.kt)
 - [SynchronousVsAsynchronous.kt](SynchronousVsAsynchronous.kt)
 
 ## Resources
+
 - [Kotlin Playground](https://play.kotlinlang.org/)
 - [Kotlin Coroutines Guide](https://kotlinlang.org/docs/coroutines-guide.html)
 - [Kotlin Coroutines on Android](https://developer.android.com/kotlin/coroutines)
